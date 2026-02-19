@@ -24,7 +24,7 @@ def normalize_punctuation(text: str) -> str:
 class VoiceImagePlayer:
     def __init__(self, face_path, size=(760, 760)):
         self.root = tk.Tk()
-        self.root.title("F.A.I.T.H")
+        self.root.title("J.A.R.V.I.S")
         self.root.resizable(False, False)
         self.root.geometry("760x900")
 
@@ -140,3 +140,4 @@ def edge_speak(text: str, img_player: VoiceImagePlayer, voice: str = VOICE):
 
 
     threading.Thread(target=_thread_target, daemon=True).start()
+
