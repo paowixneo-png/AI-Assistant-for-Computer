@@ -94,7 +94,7 @@ class VoiceImagePlayer:
 
         self.root.after(50, self.animate)
 
-VOICE = "en-GB-OllieMultilingualNeural"
+VOICE = "en-US-BrianMultilingualNeural"
 
 def edge_speak(text: str, img_player: VoiceImagePlayer, voice: str = VOICE):
     if not text.strip():
@@ -137,5 +137,6 @@ def edge_speak(text: str, img_player: VoiceImagePlayer, voice: str = VOICE):
         asyncio.set_event_loop(loop)
         loop.run_until_complete(_speak())
         loop.close()
+
 
     threading.Thread(target=_thread_target, daemon=True).start()
