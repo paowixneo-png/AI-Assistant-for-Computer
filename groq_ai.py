@@ -10,7 +10,7 @@ if not GROQ_API_KEY:
 client = Groq(api_key=GROQ_API_KEY)
 
 SYSTEM_PROMPT = """
-Give useful and shortly answers,
+Give useful and short answers,
 Don't forget to add, "sir".
 """
 
@@ -66,3 +66,4 @@ def get_response(user_text):
 def reset_history():
     global chat_history
     chat_history = []
+
