@@ -5,7 +5,7 @@ import queue
 import sys
 import json
 
-MODEL_PATH = "C:/Users/90553/Downloads/vosk/vosk-model-small-en-us-0.15" #put your path in here
+MODEL_PATH = ""C:\Users\riaan\Downloads\vosk-model-small-en-us-0.15 (1).zip"" #put your path in here
 model = vosk.Model(MODEL_PATH)
 
 q = queue.Queue()
@@ -29,4 +29,5 @@ def record_voice(prompt="🎙 I'm listening, sir...", timeout=None, phrase_time_
                 text = result.get("text", "")
                 if text.strip():
                     print("👤 You:", text)
+
                     return text
